@@ -12,7 +12,16 @@ public class User {
     private String Email;
     private String Password;
 
-    User(){ }
+    public User() {}
+
+    public User(
+            String username,
+            String email,
+            String password) {
+        this.Username = username;
+        this.Email = email;
+        this.Password = password;
+    }
 
     public long getId() {
         return Id;
